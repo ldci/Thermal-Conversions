@@ -8,14 +8,6 @@ REBOL [
 
 do %thermalScales.r3	;--load conversion functions
 
-;--R3 print-horizontal-line does not exist in Red
-;--we make something similar
-
-print-horizontal-line: does [
-	str: copy ""
-	repeat i 80 [append str "-"]
-	print str
-]
 
 print-horizontal-line
 print "Celsius Scale"
